@@ -817,6 +817,8 @@
 #skills #skills-grid .skills-card {
   min-height: 300px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 #skills #skills-grid .skills-card .skills-card-title {
   text-align: center;
@@ -1305,7 +1307,7 @@
     padding: 2%;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: 'photo links' 'photo name-job' 'photo cv' 'coor coor';
+    grid-template-areas: 'photo links' 'photo name-job' 'photo cv' 'coor coor';
   }
   #core #side-core #side-core-photo {
     position: relative;

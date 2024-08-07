@@ -708,6 +708,8 @@
         'web app'
         'tools other';
         .skills-card{
+            display: flex;
+            flex-direction: column;
             min-height: 300px;
             border-radius: 20px;
             .skills-card-title{
