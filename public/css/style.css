@@ -1186,9 +1186,7 @@
   #core {
     max-height: 815px;
   }
-  #core #main-core {
-    overflow: scroll;
-  }
+  
   #skills {
     padding-bottom: 15px;
     padding-top: 15px;
