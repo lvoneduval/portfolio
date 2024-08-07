@@ -15,22 +15,18 @@ app.get('/', (req, res) => {
 });
 
 app.get('/home', (req, res) => {
-  console.log('GET /');
   res.render('home', { title: 'Home' });
 });
 
 app.get('/resume', (req, res) => {
-  console.log('GET /');
   res.render('resume', { title: 'Resume' });
 });
 
 app.get('/skills', (req, res) => {
-  console.log('GET /');
   res.render('skills', { title: 'Skills' });
 });
 
 app.get('/projects', (req, res) => {
-  console.log('GET /');
   res.render('projects', { title: 'Projects' });
 });
 
