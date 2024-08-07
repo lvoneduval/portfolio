@@ -38,6 +38,7 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    min-width: 320px;
 }
 
 #header{
@@ -94,7 +95,7 @@
             align-items: center;
             svg{
                 width: 32px;
-                height: 32px;;
+                height: 32px;
             }
 
         }
@@ -1310,6 +1311,50 @@
         width: 85%;
     }
 }
+
+@media screen and (max-width: 435px){
+    #header{
+        #header-left {
+            #main-title {
+                #name {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #core{
+        #side-core{
+            min-width: unset;
+            #side-core-coordinate{
+                justify-content: space-evenly;
+                width: 100%;
+                gap: 20px;
+                .side-core-coordinate-elements{
+                    width: unset;
+                    a{
+                        flex-direction: column;
+                        p{font-size: 8px;}
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #header{
+        #header-left {
+            #main-title {
+                #name {
+                    font-size: 14px;
+                }
+            }
+        }
+    } 
+}
+
 
 /* Classes pour les conteneurs principaux avec des couleurs personnalisées */
 .color-primary{
