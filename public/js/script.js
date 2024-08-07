@@ -148,9 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let modeValue = localStorage.getItem('modeValue');
     let langValue = localStorage.getItem('langValue');
 
+    if (colorValue == null)
+    {
+            colorValue=90;
+    }
+
     rangeInput.value = colorValue;
     modeInput.checked = modeValue;
-
+  
     if (modeValue !== null) {
         modeInput.checked = (modeValue === 'true'); 
     }
