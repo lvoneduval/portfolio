@@ -3,11 +3,11 @@ const app = express();
 const path = require('path');
 
 // Définir le dossier des fichiers statiques
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // Définir le moteur de template
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '..', 'views'));
 
 // Routes pour les différentes pages
 app.get('/', (req, res) => {
