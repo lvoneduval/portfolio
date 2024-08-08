@@ -162,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (langValue === null)
     {
         localStorage.setItem("langValue", "fr");
+        langValue = "fr"
     }
 
     rangeInput.addEventListener('input', updateColor);
